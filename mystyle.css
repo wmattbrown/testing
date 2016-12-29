@@ -1,0 +1,107 @@
+/* FONT OPTIONS
+font-family: 'IM Fell DW Pica', serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+body{
+background:#101020;
+text-align:center;
+font-family: 'IM Fell DW Pica', serif;
+font-size:1.5em;
+}
+
+/* this should apply to small devices like phones, but doesn't work on my phone unless I set
+it to over 900px. The width of my phone screen is DEFINITELY less than 900 pixels. If I set it to 1000 then it works though.
+Maybe on the next project I'll play with this a bit more.
+*/
+@media only screen and (max-width: 600px) {
+
+   body { font-size: 300%; }
+
+}
+
+#random-wiki{
+  display:inline-block;
+  text-decoration:none;
+  padding:5px;
+  margin:15px;
+  color:#6f7db3;
+  border-radius:12px;
+  /*background:lightgreen;*/
+  border:4px solid rgb(180,180,50);
+/*  box-shadow: -5px 5px 10px rgba(0, 0, 0, .8);*/
+  font-size:170%;
+  margin-top:15%;
+}
+
+#random-wiki:hover{
+  /*background:rgb(120,255,120);*/
+  background:#202030;
+  text-decoration:none;
+
+}
+
+#note{
+  color:darkgrey;
+  margin-bottom:20px;
+  font-size:120%;
+}
+
+#mag-glass{
+  height:60px;
+  vertical-align:middle;
+  border:0;
+  border-radius:50%;
+/*  box-shadow: -5px 5px 10px rgba(0, 0, 0, .8);*/
+}
+
+#search{
+  visibility:hidden;
+  width:0;
+  background:#101020;
+  margin-left:-15px;
+  border:5px solid #4f5d73;
+  border-left:10px solid #4f5d73;
+  color:white;
+  font-size:130%;
+}
+
+#search:focus{
+  outline:none;
+}
+
+#search-bar{
+  margin-bottom:50px;
+}
+
+#ex{
+  visibility:hidden;
+  vertical-align: middle;
+  width:0;
+}
+
+form{
+  display:inline;
+}
+
+h2{
+  font-family: 'Roboto Slab', serif;
+}
+
+p{
+  font-size:150%;
+}
+
+.result{
+  background-color:lightblue;
+  visibility:hidden;
+  padding:5px 10px 10px 30px;
+  color:#101010;
+  text-align:left;
+  margin-bottom: 40px;
+}
+.result:hover{
+  box-shadow: -25px 0 0 -15px #FFE303;
+  text-decoration:none;
+  color:#101010;
+}
